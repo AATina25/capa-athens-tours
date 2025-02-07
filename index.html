@@ -60,11 +60,33 @@
             margin: 20px auto;
             max-width: 200px;
         }
+
+        /* Add responsiveness */
+        @media (max-width: 768px) {
+            .tour {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center; /* Center content on smaller screens */
+            }
+
+            .tour img {
+                width: 90%; /* Make the image width adapt to the screen size */
+                height: auto; /* Maintain aspect ratio */
+                margin-bottom: 1rem; /* Add spacing below the image */
+            }
+
+            .tour div {
+                text-align: center; /* Center-align text */
+                padding: 0 1rem; /* Add some padding */
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="aia-logo.png" alt="AIA Logo" class="logo">
+        <div style="display: flex; justify-content: center; gap: 20px; align-items: center;">
+            <img src="aia-logo.jpg" alt="AIA Logo" class="logo">
+            <img src="CAPA_Airline_Leader_Summit_AIT_blue-red.jpg" alt="CAPA Summit Logo" class="logo">
+        </div>
         <h1>Welcome to CAPA Athens Tours</h1>
     </header>
 
@@ -167,9 +189,9 @@
             <li>Click on the tour you are interested in.</li>
             <li>Go to "Book Now" or "Book as private"depending if you want to book a small group tour or a private tour.</li>
             <li>Select the date you want.</li>
-            <li>During checkout, use code <strong>CAPA10%</strong> in the field ‘have a code?’ to benefit from a 10% discount on your total (excluding entrance fees).</li>
+            <li>During checkout, use code <strong>AIA10%</strong> in the field ‘have a code?’ to benefit from a 10% discount on your total (excluding entry fees).</li>
         </ol>
-        <p>Questions? If you have any questions, please email Alternative Athens at <a href="mailto:contact@alternativeathens.com">contact@alternativeathens.com</a> or call +302110126544.</p>
+        <p>Questions? If you have any questions, please contact us at <a href="mailto:contact@alternativeathens.com">contact@alternativeathens.com</a> or call +302110126544.</p>
     </section>
 
 <footer>
